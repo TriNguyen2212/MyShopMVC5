@@ -69,10 +69,6 @@
       <Project>{801e3a2d-013f-487b-a51c-9d2b976740a1}</Project>
       <Name>MyClassShop.Service</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MyClassShop.Web\MyClassShop.Web.csproj">
-      <Project>{4a5622f0-a0d6-425d-9548-33979b709a5c}</Project>
-      <Name>MyClassShop.Web</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
