@@ -1,7 +1,7 @@
 ﻿/// <reference path="/Assets/admin/libs/angular/angular.js" />
 
 (function () {
-    angular.module('tedushop.products', ['tedushop.commom']).config(config);
+    angular.module('tedushop.products', ['tedushop.common']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 
@@ -12,7 +12,7 @@
             controller: "productListController"
         }).state('product_Add', {
             url: "/product_Add",
-            templateUrl: "app/components/products/productAddView.html",
+            templateUrl: "/app/components/products/productAddView.html",
             controller: "productAddController"
         });
     }

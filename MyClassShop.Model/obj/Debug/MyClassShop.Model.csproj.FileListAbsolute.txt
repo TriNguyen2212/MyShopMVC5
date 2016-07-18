@@ -21,3 +21,17 @@ D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\myClassShop\myClassShop\MyClassShop.Model\b
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\myClassShop\myClassShop\MyClassShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\myClassShop\myClassShop\MyClassShop.Model\obj\Debug\MyClassShop.Model.dll
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\myClassShop\myClassShop\MyClassShop.Model\obj\Debug\MyClassShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\MyClassShop.Model.dll.config
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\MyClassShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\MyClassShop.Model.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\obj\Debug\MyClassShop.Model.csprojResolveAssemblyReference.cache
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\obj\Debug\MyClassShop.Model.dll
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Model\obj\Debug\MyClassShop.Model.pdb

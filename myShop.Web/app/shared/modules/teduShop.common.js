@@ -1,3 +1,3 @@
 ﻿(function () {
-    angular.module('tedushop.commom', ['ui.router']);
+    angular.module('tedushop.common', ['ui.router']);
 })();
