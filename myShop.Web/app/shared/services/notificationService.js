@@ -29,7 +29,7 @@
                 });
             }
             else
-                toastr.displayError(Error);
+            toastr.error(error);
         }
         function displayWarning(message) {
             toastr.warning(message);

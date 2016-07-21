@@ -21,15 +21,12 @@
                 params: {
                     keyword:$scope.keyword,
                     page: page,
-                    pageSize: 2
+                    pageSize: 20
                 }
             };
             apiService.get('/api/productcategory/getall', config, function (result) {
                 if (result.data.TotalCount == 0) {
                     notificationService.displayWarning('Không có bảng ghi nào được tìm thấy');
-                }
-                else {
-                    notificationService.displaySuccess('Đã tìm thấy ' + result.data.TotalCount + ' bảng ghi');
                 }
 
                 $scope.productCategories = result.data.Items;

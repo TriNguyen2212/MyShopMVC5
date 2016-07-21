@@ -1,12 +1,26 @@
 ﻿/// <reference path="/Assets/admin/libs/angular/angular.js" />
 
 (function (app) {
-    app.factory('apiService', apiService);
+    app.factory('apiService', apiService,'notificationService');
 
     apiService.$inject = ['$http'];
     function apiService($http) {
         return {
-            get: get
+            get: get,
+            post:post
+        }
+
+        function post(url, data, success, failure) {
+            $http.post(url, data).then(function (result) {
+                success(result);
+            }, function (error) {
+                if (error.status == '401') {
+                    notificationService.displayError('authenticate is required.');
+                } else if (failure != null) {
+                    failure(error);
+                }
+                
+            });
         }
 
         function get(url, params, success, failure) {
