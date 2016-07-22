@@ -2,12 +2,25 @@
 
 (function (app) {
     app.factory('apiService', apiService,'notificationService');
-
     apiService.$inject = ['$http'];
     function apiService($http) {
         return {
             get: get,
-            post:post
+            post: post,
+            put: put
+        }
+
+        function put(url, data, success, failure) {
+            $http.put(url, data).then(function (result) {
+                success(result);
+            }, function (error) {
+                if (error.status == '401') {
+                    notificationService.displayError('authenticate is required.');
+                } else if (failure != null) {
+                    failure(error);
+                }
+
+            });
         }
 
         function post(url, data, success, failure) {
