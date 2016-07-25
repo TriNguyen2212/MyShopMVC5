@@ -10,6 +10,7 @@ using AutoMapper;
 using MyClassShop.Model.Models;
 using myShop.Web.Models;
 using MyClassShop.Web.Infratructure.Extensions;
+using System.Web.Script.Serialization;
 
 namespace myShop.Web.Api
 {
@@ -62,6 +63,41 @@ namespace myShop.Web.Api
                 var model = _productCategoryService.GetById(id);
                 var responseData = Mapper.Map<ProductCategory, ProductCategoryViewModel>(model);
                 var response = request.CreateResponse(HttpStatusCode.OK, responseData);
+                return response;
+            });
+        }
+
+        [Route("delete")]
+        [HttpDelete]
+        public HttpResponseMessage Delete(HttpRequestMessage request, string listid)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                var ids = new JavaScriptSerializer().Deserialize<List<int>>(listid);
+                foreach (var id in ids)
+                {
+                    _productCategoryService.Delete(id);
+                }
+                _productCategoryService.Save();
+                var response = request.CreateResponse(HttpStatusCode.OK, true);
+                return response;
+            });
+        }
+
+        [Route("deletemulti")]
+        [HttpDelete]
+        public HttpResponseMessage DeleteMulti(HttpRequestMessage request, string checkedProductCategories)
+        {
+            return CreateHttpResponse(request, () =>
+            {
+                var listProductCategory = new JavaScriptSerializer().Deserialize<List<int>>(checkedProductCategories);
+
+                foreach (var item in listProductCategory)
+                {
+                    _productCategoryService.Delete(item);
+                }
+                _productCategoryService.Save();
+                var response = request.CreateResponse(HttpStatusCode.OK, listProductCategory.Count);
                 return response;
             });
         }
@@ -132,5 +168,7 @@ namespace myShop.Web.Api
             });
 
         }
+
+
     }
 }

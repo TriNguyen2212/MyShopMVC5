@@ -160,3 +160,4 @@ D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\myShop.Web\bin\Sys
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\myShop.Web\obj\Debug\myShop.Web.csprojResolveAssemblyReference.cache
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\myShop.Web\obj\Debug\myShop.Web.dll
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\myShop.Web\obj\Debug\myShop.Web.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\myShop.Web\bin\CKFinder.dll
