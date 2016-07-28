@@ -3,15 +3,14 @@ using MyClassShop.Model.Models;
 
 namespace MyClassShop.Data.Reponsitories
 {
-    public interface IErrorRepositoty : IRepository<Error>
+    public interface IErrorRepository : IRepository<Error>
     {
     }
 
-    public class ErrorRepository : RepositoryBase<Error>, IErrorRepositoty
+    public class ErrorRepository : RepositoryBase<Error>, IErrorRepository
     {
         public ErrorRepository(IDbFactory dbFactory) : base(dbFactory)
         {
-
         }
     }
 }

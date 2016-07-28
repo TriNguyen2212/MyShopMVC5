@@ -61,3 +61,4 @@ D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Data\o
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Data\obj\Debug\MyClassShop.Data.csproj.GenerateResource.Cache
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Data\obj\Debug\MyClassShop.Data.dll
 D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Data\obj\Debug\MyClassShop.Data.pdb
+D:\TAI_LIEU_HOC_TAP\Du_An\Hoc Online\GitHub_Source\MyShopMVC5\MyClassShop.Data\obj\Debug\MyClassShop.Data.Migrations.AddTagField.resources

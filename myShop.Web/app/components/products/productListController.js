@@ -97,7 +97,7 @@
                     notificationService.displayWarning('Không có bảng ghi nào được tìm thấy');
                 }
 
-                $scope.productCategories = result.data.Items;
+                $scope.products = result.data.Items;
                 $scope.page = result.data.page;
                 $scope.pagesCount = result.data.TotalPages;
                 $scope.totalCount = result.data.TotalCount;

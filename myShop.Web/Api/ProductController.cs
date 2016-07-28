@@ -69,17 +69,25 @@ namespace myShop.Web.Api
 
         [Route("delete")]
         [HttpDelete]
-        public HttpResponseMessage Delete(HttpRequestMessage request, string listid)
+        [AllowAnonymous]
+        public HttpResponseMessage Delete(HttpRequestMessage request, int id)
         {
             return CreateHttpResponse(request, () =>
             {
-                var ids = new JavaScriptSerializer().Deserialize<List<int>>(listid);
-                foreach (var id in ids)
+                HttpResponseMessage response = null;
+                if (!ModelState.IsValid)
                 {
-                    _productService.Delete(id);
+                    response = request.CreateResponse(HttpStatusCode.BadRequest, ModelState);
                 }
-                _productService.Save();
-                var response = request.CreateResponse(HttpStatusCode.OK, true);
+                else
+                {
+                    var oldProduct = _productService.Delete(id);
+                    _productService.Save();
+
+                    var responseData = Mapper.Map<Product, ProductViewModel>(oldProduct);
+                    response = request.CreateResponse(HttpStatusCode.Created, responseData);
+                }
+
                 return response;
             });
         }

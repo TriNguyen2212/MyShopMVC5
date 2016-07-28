@@ -12,7 +12,6 @@ namespace myShop.Web.Infratructure.Core
 {
     public class ApiControllerBase : ApiController
     {
-        
         private IErrorService _errorService;
 
         public ApiControllerBase(IErrorService errorService)
@@ -59,12 +58,12 @@ namespace myShop.Web.Infratructure.Core
             {
                 Error error = new Error();
                 error.CreatedDate = DateTime.Now;
-                error.Message = ex.Message;
-                error.StackTrace = ex.StackTrace;
+                error.Message = "Message"; //ex.Message;
+                error.StackTrace = "StackTrace";// ex.StackTrace;
                 _errorService.Create(error);
                 _errorService.Save();
             }
-            catch
+            catch (Exception exlog)
             {
             }
         }
