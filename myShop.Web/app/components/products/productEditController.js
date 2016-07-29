@@ -10,9 +10,13 @@
             Status: true
         }
 
+        $scope.moreImages = $scope.product.moreImages;
+
         function loadProductDetail() {
             apiService.get('/api/product/getbyid/' + $stateParams.id, null, function (result) {
                 $scope.product = result.data;
+                if (result.data.MoreImages != null)
+                    $scope.moreImages = JSON.parse(result.data.MoreImages);
             }, function (error) {
                 notificationService.displayError(error.data);
             });
@@ -27,6 +31,7 @@
         }
 
         function UpdateProduct() {
+            $scope.product.MoreImages =JSON.stringify($scope.moreImages);
             apiService.put('/api/product/update', $scope.product,
                 function (result) {
                     notificationService.displaySuccess(result.data.Name + ' đã được cập nhật.');
@@ -43,6 +48,30 @@
             function () {
                 console.log("canot get list parents");
             });
+        }
+
+        $scope.ChooseImage = function () {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                $scope.$apply(function () {
+                    $scope.product.Image = fileUrl;
+                });
+            }
+            finder.popup();
+        }
+        $scope.moreImages = [];
+        $scope.ChooseMoreImage = function () {
+            var finder = new CKFinder();
+            finder.selectActionFunction = function (fileUrl) {
+                $scope.$apply(function () {
+                    if ($.inArray(fileUrl, $scope.moreImages) < 0) {
+                        $scope.moreImages.push(fileUrl);
+                    }
+                    else
+                        notificationService.displayWarning('Hình này đã được chọn !');
+                });
+            }
+            finder.popup();
         }
         loadCategories();
         loadProductDetail();

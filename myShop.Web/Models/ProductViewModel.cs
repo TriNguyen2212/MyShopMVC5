@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace myShop.Web.Models
 {
@@ -9,6 +10,8 @@ namespace myShop.Web.Models
         public string Alias { set; get; }
         public int CategoryID { set; get; }
         public string Image { set; get; }
+
+        //[Column(TypeName = "xml")]
         public string MoreImages { set; get; }
         public decimal Price { set; get; }
         public decimal? PromotionPrice { set; get; }
